@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
 import { Container, DialogActions, DialogContent, DialogContentText, IconButton, makeStyles, Typography } from '@material-ui/core';
-import PhotoIcon from '@material-ui/icons/Photo';
 import Resizer from "react-image-file-resizer";
 import './Changeservername.scss'
 import { firestore } from '../../firebase/firebase';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 const useStyles=makeStyles({
     addicon:{
         width:'4.8rem',

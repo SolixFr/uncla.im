@@ -47,7 +47,8 @@ const Myrolesmap = ({user,color}) => {
                      const mykeys=Object.keys(doc.data().roles[k])
                      let arr=[];
                      mykeys.map((rol)=>{
-                        arr.push(doc.data().roles[k][rol]);                        
+                        arr.push(doc.data().roles[k][rol]);  
+                        return undefined;                      
                      })
                      setrolearr(arr);    
                 }

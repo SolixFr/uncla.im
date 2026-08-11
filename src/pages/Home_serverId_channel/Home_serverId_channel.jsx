@@ -33,7 +33,7 @@ const Home_serverId_channel = ({match}) => {
         return () => {
 
         }
-    }, [dispatch,match.params.channelId])
+    }, [dispatch, match.params.channelId, match.params.serverId])
     return (
         <>
                <div className='main__sidebar'>

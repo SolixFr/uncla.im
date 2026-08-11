@@ -24,7 +24,7 @@ const useStyles=makeStyles((theme)=>{
     const admin=useSelector((state)=>state.currentrole.admin);
     const chatedittoggle=useSelector((state)=>state.click.clicked);
     const linkify=(input)=>{
-        var urlRegex =/(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
+        var urlRegex =/(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#/?=~_|!:,.;]*[-A-Z0-9+&@#/=~_|])/ig;
         return input.match(urlRegex)
     }
     // console.log(msg.message,linkify("Cool time-lapse animation of the number of submarine data cables (internet backbone) since 1989 - https://youtu.be/6dkiqJ_IZGw\nhttps://www.youtube.com/watch?v=2ApV7zqd7no&list=RDMM&index=13"));

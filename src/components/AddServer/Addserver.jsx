@@ -6,7 +6,6 @@ import './Addserver.scss'
 import { auth, firestore } from '../../firebase/firebase';
 import firebase from 'firebase/app'
 import { useDispatch } from 'react-redux';
-import currentdoc from '../../redux/document/document.actions';
 import currentserver from '../../redux/server/server.actions';
 import newserver from '../../redux/newserver/newserver.actions';
 import { useHistory } from 'react-router';

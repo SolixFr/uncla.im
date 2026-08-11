@@ -1,44 +1,6 @@
 import React from 'react'
 import './ChatHeader.scss'
-import { fade,makeStyles } from '@material-ui/core';
 import { useSelector } from 'react-redux';
-const useStyles=makeStyles((theme)=>{
-    return{
-
-        search: {
-            position: 'relative',
-            borderRadius: theme.shape.borderRadius,
-            backgroundColor: '#212226',
-            '&:hover': {
-              backgroundColor: fade('#212226', 0.5),
-            },
-            marginLeft: 0,
-            marginRight:theme.spacing(.4),
-            width: '100%',
-            [theme.breakpoints.up('sm')]: {
-              marginLeft: theme.spacing(1),
-              width: 'auto',
-            },
-          },
-          inputRoot: {
-            color: 'inherit',
-          },
-          inputInput: {
-            padding: theme.spacing(1, 1, 1, 0),
-            fontSize:theme.spacing(1.5),
-            // vertical padding + font size from searchIcon
-            paddingLeft: `calc(1em + ${theme.spacing(4)}px)`,
-            transition: theme.transitions.create('width'),
-            width: '100%',
-            [theme.breakpoints.up('sm')]: {
-              width: '12ch',
-              '&:focus': {
-                width: '20ch',
-              },
-            },
-          },
-    }
-})
 function ChatHeader() {
     return (
         <div className="chat__main">

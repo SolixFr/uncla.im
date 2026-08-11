@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 import { firestore } from '../../firebase/firebase';
 import AvailableServersmap from './AvailableServersmap';
